@@ -1,0 +1,533 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Arial','Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+.hideme{
+  display: none;
+}
+.s2::-webkit-scrollbar {
+  display: none;
+}
+
+
+::selection {
+
+  background: transparent;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.buttonsp {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #BFC0C0;
+  margin: 20px 20px 20px 20px;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+
+
+.buttonspAni {
+  animation: shake1 0.5s infinite;
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #BFC0C0;
+  margin: 20px 20px 20px 20px;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+
+@keyframes shake1 {
+  0% {
+    transform: translate(1px, 1px) rotate(-1deg);
+    background:rgb(224, 119, 119);
+  }
+  10% {
+    transform: translate(-3px, 0px) rotate(-1deg);
+  }
+
+  30% {
+    transform: translate(3px, 1px) rotate(0deg);
+  }
+  40% {
+    transform: translate(-3px, 1px) rotate(1deg);
+    background:rgb(118, 118, 235);
+  }
+
+  60% {
+    transform: translate(1px, -1px) rotate(0deg);
+  
+  }
+  70% {
+    transform: translate(3px, 2px) rotate(-1deg);
+  }
+ 
+  90% {
+    transform: translate(-1px, 2px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(0deg);
+    background:rgb(111, 255, 186);
+  
+  }
+}
+
+
+
+a {
+  color: #BFC0C0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+
+/* First Button */
+
+#arrow-hover {
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  transform: translateX(60px);
+  opacity: 0;
+  -webkit-transition: all .25s cubic-bezier(.14, .59, 1, 1.01);
+  transition: all .15s cubic-bezier(.14, .59, 1, 1.01);
+  margin: 0;
+  padding: 0 5px;
+}
+
+
+
+a#button-1:hover img {
+  width: 15px;
+  opacity: 1;
+  transform: translateX(50px);
+}
+
+
+/* Second Button */
+
+#button-2 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-2 a {
+  position: relative;
+  transition: all .35s ease-Out;
+}
+
+#slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+#button-2:hover #slide {
+  left: 0;
+}
+
+#button-2:hover a {
+  color: #2D3142;
+}
+
+
+/* Third Button */
+
+#button-3 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-3 a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+#button-3:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+#button-3:hover a {
+  color: #2D3142;
+}
+
+
+/* Fourth Button */
+
+#button-4 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-4 a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#underline {
+  width: 100%;
+  height: 2.5px;
+  margin-top: 15px;
+  align-self: flex-end;
+  left: -200px;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .3s ease-Out;
+  bottom: 0;
+}
+
+#button-4:hover #underline {
+  left: 0;
+}
+
+
+/* Fifth Button */
+
+#button-5 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-5 a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .3s ease-Out;
+}
+
+#button-5:hover #translate {
+  left: 0;
+}
+
+#button-5:hover a {
+  color: #2D3142;
+}
+
+
+/* Sixth Button */
+
+#button-6 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-6 a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#spin {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  left: 70px;
+  top: 20px;
+  transform: rotate(0deg);
+  background: none;
+  position: absolute;
+  transition: all .5s ease-Out;
+}
+
+
+
+
+
+
+/* Seventh Button */
+
+#button-7 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-7 a {
+  position: relative;
+  left: 0;
+  transition: all .35s ease-Out;
+}
+
+#dub-arrow {
+  width: 100%;
+  height: 100%;
+  background: #BFC0C0;
+  left: -200px;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+#button-7 img {
+  width: 20px;
+  height: auto;
+}
+
+#button-7:hover #dub-arrow {
+  left: 0;
+}
+
+#button-7:hover a {
+  left: 150px;
+}
+
+@media screen and (min-width:1000px) {
+  h1 {
+    font-size: 2.2em;
+  }
+  #container {
+    width: 50%;
+  }
+}
+
+
+.container {
+ 
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container>span{
+
+  animation: shake 0.5s infinite;
+  font-size: 4rem;
+  color: black;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+}
+
+.container>p{
+
+  animation: BassBeat 1.75s infinite;
+  font-size: 4rem;
+  color: black;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+}
+
+
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, -2px) rotate(0deg);
+    
+  }
+  10% {
+    transform: translate(-1px, 2px) rotate(1deg);
+  }
+  20% {
+    transform: translate(1px, 2px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(-1deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(1deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(0deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(0deg);
+  }
+  90% {
+    transform: translate(-3px, 0px) rotate(-1deg);
+  }
+  100% {
+    transform: translate(1px, 1px) rotate(-1deg);
+  }
+}
+
+
+
+
+
+.soundwave {
+  margin: 20px auto;
+ 
+  
+  height: 200px;
+
+  overflow: hidden;
+    text-align: center;
+  vertical-align: middle;
+
+ 
+
+}
+.soundwave:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.BassBeat {
+  display: inline-block;
+  margin: 0;
+
+    color: white;
+  
+  font-size: 60px;
+  line-height: 60px;
+
+  outline: none;
+  vertical-align: middle;
+    font-size: 1rem;
+  animation: 1.75s BassBeat infinite linear;
+
+}
+
+@keyframes BassBeat {
+  0%   {
+    transform: scale(1,1)  translate(3px, 1px) rotate(1deg);
+    color:rgb(224, 119, 119);
+  }
+  5%   {
+    transform: scale(1.2,1.2);
+  }
+  20%   {
+    transform: scale(1,1);
+  }
+  25%   {
+    transform: scale(1.3,1.3);
+  }
+  40%   {
+    transform: scale(1,1);
+  }
+  45%   {
+    transform: scale(1.2,1.2);
+    color:rgb(136, 220, 235);
+  
+  }
+  60%   {
+    transform: scale(1,1);
+  }
+  65%   {
+    transform: scale(1.4,1.4) translate(1px, 3px) rotate(-1deg);
+  }
+  80%   {
+    transform: scale(1,1);
+    color:rgb(247, 143, 143);
+  }
+  85%   {
+    transform: scale(1.2,1.2);
+    color:rgb(215, 250, 133);
+  }
+  100%   {
+    transform: scale(1,1);
+    color:rgb(157, 121, 223);
+    
+  }
+}
+
+
+
+
+
+
+.buttonre {
+  animation: shake2 0.5s infinite;
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #BFC0C0;
+  margin: 20px 20px 20px 20px;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@keyframes shake2 {
+  0% {
+  background:#3cdfdf;
+    
+  }
+  
+  100% {
+    
+    background:transparent;
+  
+  }
+}
